@@ -14,10 +14,7 @@ root_dir="${HOME}/.bitcore"
 platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
 version="0.13.4.3"
-url="https://github.com/zcoinofficial/zcoin/releases"
-
-3.23 MBzcoin-qt-v0.13.4.3-linux64.tar.gz
-
+url="https://github.com/zcoinofficial/zcoin/releases/download/v" + ${version} +'/';
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
         tarball_name="zcoin-qt-${version}-linux64.tar.gz"

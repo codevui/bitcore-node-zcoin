@@ -34,9 +34,8 @@
     ],
     "dependencies": {
         "async": "^1.3.0",
-        "bitcoind-rpc-zcoin": "git://github.com/sn-ntu/bitcoind-rpc-zcoin.git",
-        "bitcore-lib-zcoin": "git://github.com/sn-ntu/bitcore-lib-zcoin.git",
-        "bitcore-p2p-zcoin": "git://github.com/sn-ntu/bitcore-p2p-zcoin.git",
+        "bitcoind-rpc-zcoin": "git://github.com/codevui/bitcoind-rpc-zcoin.git",
+        "bitcore-lib-zcoin": "git://github.com/codevui/bitcore-lib-zcoin.git",
         "body-parser": "^1.13.3",
         "colors": "^1.1.2",
         "commander": "^2.8.1",
@@ -58,6 +57,7 @@
     },
     "devDependencies": {
         "benchmark": "1.0.0",
+        "bitcore-p2p-zcoin": "git://github.com/codevui/bitcore-p2p-zcoin.git",
         "chai": "^3.5.0",
         "coveralls": "^2.11.9",
         "istanbul": "^0.4.3",

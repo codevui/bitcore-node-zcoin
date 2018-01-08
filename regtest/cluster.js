@@ -4,7 +4,7 @@ var path = require('path');
 var async = require('async');
 var spawn = require('child_process').spawn;
 
-var BitcoinRPC = require('bitcoind-rp-zcoin');
+var BitcoinRPC = require('bitcoind-rpc-zcoin');
 var rimraf = require('rimraf');
 var bitcore = require('bitcore-lib-zcoin');
 var chai = require('chai');
@@ -20,8 +20,7 @@ var BitcoinService = index.services.Bitcoin;
 describe('Bitcoin Cluster', function () {
     var node;
     var daemons = [];
-    //var execPath = path.resolve(__dirname, './.bitcore/data/zcoind');
-    var execPath = path.resolve(__dirname, '../bin/zcoind');
+    var execPath = path.resolve(__dirname, process.env.HOME, './.bitcore/data/zcoind')
     // + changes  of bitcoin.conf to zcoin.conf
     var nodesConf = [
         {
